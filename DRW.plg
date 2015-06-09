@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DRW - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40d /fo"Release/DRW.res" /d "NDEBUG" /d "_AFXDLL" "S:\emotion\DRW.rc"" 
+Creating temporary file "C:\DOCUME~1\COHAVI~1.COH\LOCALS~1\Temp\RSP19B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/DRW.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"S:\emotion\CameraBasedDraw.cpp"
+"S:\emotion\Group4.cpp"
+"S:\emotion\MotionSettingsDlg.cpp"
+"S:\emotion\SettingsDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\COHAVI~1.COH\LOCALS~1\Temp\RSP19B.tmp" 
+Creating temporary file "C:\DOCUME~1\COHAVI~1.COH\LOCALS~1\Temp\RSP19C.tmp" with contents
+[
+vfw32.lib d3d9.lib d3dx9dt.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/DRW.pdb" /machine:I386 /out:"DRW.exe" 
+.\Release\3DDraw.obj
+.\Release\BaseDraw.obj
+.\Release\BrowseForFolder.obj
+.\Release\CameraBasedDraw.obj
+.\Release\CameraPicture.obj
+.\Release\d3dfont.obj
+.\Release\Dib.obj
+.\Release\DRW.obj
+.\Release\DRWDoc.obj
+.\Release\DRWView.obj
+.\Release\Group1.obj
+.\Release\Group2.obj
+.\Release\Group3.obj
+.\Release\Group4.obj
+.\Release\MainFrm.obj
+.\Release\MatrixOptions.obj
+.\Release\MemDC.obj
+.\Release\MotionSettingsDlg.obj
+.\Release\SelectDrawingsDlg.obj
+.\Release\SettingsDlg.obj
+.\Release\SetupMatrixDlg.obj
+.\Release\Splash.obj
+.\Release\StaticBasedDraw.obj
+.\Release\StdAfx.obj
+.\Release\Utils.obj
+.\Release\VideoCapture.obj
+.\Release\DRW.res
+]
+Creating command line "link.exe @C:\DOCUME~1\COHAVI~1.COH\LOCALS~1\Temp\RSP19C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+CameraBasedDraw.cpp
+Group4.cpp
+MotionSettingsDlg.cpp
+SettingsDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DRW.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

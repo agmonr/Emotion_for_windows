@@ -1,0 +1,658 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DRW.ico"
+IDR_DRWTYPE             ICON    DISCARDABLE     "res\\DRWDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_FULLSCREEN
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Full Screen",                ID_VIEW_FULLSCREEN
+        MENUITEM "&Settings",                   ID_VIEW_SETTINGS
+        MENUITEM "&New Settings",               ID_VIEW_NEW_SETTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About e-Motion...",          ID_ABOUT
+    END
+END
+
+IDR_DRWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About e-Motion...",          ID_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_DEFAULT_MATRIX,      VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_TOGGLE_CAPTURE,      VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_APP_EXIT,            VIRTKEY, NOINVERT
+    VK_F1,          ID_ABOUT,               VIRTKEY, NOINVERT
+    VK_F2,          ID_VIEW_SETTINGS,       VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_NEW_SETTINGS,   VIRTKEY, NOINVERT
+    VK_F4,          ID_SELECT_FUNTIONS,     VIRTKEY, NOINVERT
+    VK_F5,          ID_SETUP_MATRIX,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_MOVE_LEFT,           VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_MOVE_RIGHT,          VIRTKEY, NOINVERT
+    VK_UP,          ID_MOVE_UP,             VIRTKEY, NOINVERT
+    VK_DOWN,        ID_MOVE_DOWN,           VIRTKEY, NOINVERT
+    "A",            ID_MOVE_FORWARD,        VIRTKEY, NOINVERT
+    "Z",            ID_MOVE_BACK,           VIRTKEY, NOINVERT
+    VK_SPACE,       ID_NEXT_DRAW,           VIRTKEY, NOINVERT
+    "X",            ID_LOOK_LEFT,           VIRTKEY, NOINVERT
+    "V",            ID_LOOK_RIGHT,          VIRTKEY, NOINVERT
+    "D",            ID_LOOK_UP,             VIRTKEY, NOINVERT
+    "C",            ID_LOOK_DOWN,           VIRTKEY, NOINVERT
+    "K",            ID_LOOK_ZOOMIN,         VIRTKEY, NOINVERT
+    "M",            ID_LOOK_ZOOMOUT,        VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About e-Motion"
+FONT 14, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    CTEXT           "Individual Art - e-Motion",IDC_STATIC,37,7,170,35,
+                    SS_CENTERIMAGE
+    CTEXT           "(C) Copyright 2003",IDC_STATIC,37,42,161,12,
+                    SS_CENTERIMAGE
+    CTEXT           "Aryeh Agmon",IDC_STATIC,37,78,161,8
+    CTEXT           "Ram-on Agmon",IDC_STATIC,37,87,161,8
+    CTEXT           "Cohavit Taboch",IDC_STATIC,36,98,161,8
+    CTEXT           "All Right Resreved",IDC_STATIC,40,56,161,12,
+                    SS_CENTERIMAGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DRW MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DRW\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DRW.EXE\0"
+            VALUE "ProductName", "DRW Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "DRW"
+    IDR_DRWTYPE             "\nDRW\nDRW\n\n\nDRW.Document\nDRW Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "DRW"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FULLSCREEN      "View Full Screen\nFull Screen"
+    ID_VIEW_SETTINGS        "View settings\nSettings"
+    ID_VIEW_NEW_SETTINGS    "View new settings\nNew Settings"
+    ID_ABOUT                "Display program information, version number and copyright\nAbout"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    IDS_ERR_FIND_HARDWARE   "No capture device found"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_FULLSCREEN          BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_FLOWER              BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_FULLSCREEN TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32771
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 183, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,169,95
+    LTEXT           "&Refresh Rate (msec):",IDC_STATIC,15,20,68,8
+    EDITTEXT        IDC_EDIT_REFRESH_RATE,96,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "&Load new image every (sec):",IDC_STATIC,15,41,92,8
+    EDITTEXT        IDC_EDIT_LOAD_IMAGE,116,38,40,14,ES_AUTOHSCROLL
+    LTEXT           "Full Rect:",IDC_STATIC,17,67,31,8
+    LTEXT           "left",IDC_STATIC,54,67,22,8
+    EDITTEXT        IDC_X,76,64,22,14,ES_AUTOHSCROLL
+    LTEXT           "top",IDC_STATIC,105,67,22,8
+    EDITTEXT        IDC_Y,130,64,22,14,ES_AUTOHSCROLL
+    LTEXT           "right",IDC_STATIC,54,85,22,8
+    EDITTEXT        IDC_X1,76,82,22,14,ES_AUTOHSCROLL
+    LTEXT           "bottom",IDC_STATIC,105,85,22,8
+    EDITTEXT        IDC_Y1,130,82,22,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,73,108,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,126,108,50,14
+END
+
+IDD_MOTION_SETTINGS DIALOG DISCARDABLE  0, 0, 222, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,7,8,208,111
+    CONTROL         "Use Group 1 drawings. Timer:",IDC_CHECK_GROUP1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,25,109,10
+    EDITTEXT        IDC_EDIT_TIMER1,128,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "msec",IDC_STATIC,173,26,18,8
+    CONTROL         "Use Group 2 drawings. Timer:",IDC_CHECK_GROUP2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,43,109,10
+    EDITTEXT        IDC_EDIT_TIMER2,128,41,40,14,ES_AUTOHSCROLL
+    LTEXT           "msec",IDC_STATIC,173,44,18,8
+    CONTROL         "Use Group 3 drawings. Timer:",IDC_CHECK_GROUP3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,61,109,10
+    EDITTEXT        IDC_EDIT_TIMER3,128,59,40,14,ES_AUTOHSCROLL
+    LTEXT           "msec",IDC_STATIC,172,62,18,8
+    LTEXT           "Change colors every:",IDC_STATIC,17,81,100,8
+    EDITTEXT        IDC_EDIT_TIMERCOLOR,128,78,40,14,ES_AUTOHSCROLL
+    LTEXT           "msec",IDC_STATIC,174,81,18,8
+    CONTROL         "Display function name",IDC_DISPLAYFUNCNAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,101,85,10
+    GROUPBOX        "Performace && Filters",IDC_STATIC,7,122,208,68
+    LTEXT           "Camera Factor:",IDC_STATIC,17,135,49,8
+    EDITTEXT        IDC_CAMERAFACTOR,72,132,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Adjust Automatically",IDC_ADJUST_AUTOMATICALLY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,134,77,10
+    LTEXT           "Color difference threshold",IDC_STATIC,17,154,81,8
+    EDITTEXT        IDC_COLOR_THRESHOLD,132,151,40,14,ES_AUTOHSCROLL
+    LTEXT           "Minimal number of neighbour pixels:",IDC_STATIC,17,173,
+                    112,8
+    EDITTEXT        IDC_MIN_NEIGHBOURS,132,170,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,197,50,14
+END
+
+IDD_DRAWINGS DIALOGEX 0, 0, 232, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Drawings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST,7,7,218,165,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "&Select All",IDC_SELECTALL,7,181,50,14
+    PUSHBUTTON      "&Unselect All",IDC_UNSELECTALL,62,181,50,14
+    DEFPUSHBUTTON   "OK",IDOK,120,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,181,50,14
+END
+
+IDD_MATRICES DIALOG DISCARDABLE  0, 0, 186, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup Matrix"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "World",IDC_STATIC,7,7,172,68
+    EDITTEXT        IDC_ROTATEX,71,23,40,14,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,123,26,26,8
+    EDITTEXT        IDC_ROTATEY,71,39,40,14,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,123,42,26,8
+    EDITTEXT        IDC_ROTATEZ,71,55,40,14,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,123,58,26,8
+    GROUPBOX        "View",IDC_STATIC,7,77,172,67
+    LTEXT           "Eye Point:",IDC_STATIC,15,93,33,8
+    EDITTEXT        IDC_EYEX,63,90,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EYEY,96,90,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EYEZ,127,90,25,14,ES_AUTOHSCROLL
+    LTEXT           "LookAt Point:",IDC_STATIC,15,110,44,8
+    EDITTEXT        IDC_LOOKATX,63,107,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOOKATY,96,107,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOOKATZ,127,107,25,14,ES_AUTOHSCROLL
+    LTEXT           "UP Point:",IDC_STATIC,15,125,31,8
+    EDITTEXT        IDC_UPX,63,122,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UPY,96,122,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UPZ,127,122,25,14,ES_AUTOHSCROLL
+    GROUPBOX        "Perspective",IDC_STATIC,7,146,172,91
+    LTEXT           "Field of view:",IDC_STATIC,15,161,42,8
+    EDITTEXT        IDC_FIELDOFVIEW,65,158,40,14,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,117,161,26,8
+    LTEXT           "Aspect",IDC_STATIC,15,179,23,8
+    EDITTEXT        IDC_ASPECT,65,175,40,14,ES_AUTOHSCROLL
+    LTEXT           "Near Z:",IDC_STATIC,16,197,25,8
+    EDITTEXT        IDC_NEARZ,65,193,40,14,ES_AUTOHSCROLL
+    LTEXT           "Far Z:",IDC_STATIC,15,214,20,8
+    EDITTEXT        IDC_FARZ,65,210,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,76,245,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,245,50,14
+    PUSHBUTTON      "&Set Default",IDC_DEFAULT,7,245,50,14
+    LTEXT           "Rotate X",IDC_STATIC,15,26,43,8
+    LTEXT           "Rotate Z",IDC_STATIC,15,58,43,8
+    LTEXT           "Rotate Y",IDC_STATIC,15,42,43,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_MOTION_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DRAWINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_MATRICES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DRW.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NONE                CURSOR  DISCARDABLE     "res\\cursor1.cur"
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DRW.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
